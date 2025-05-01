@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --grape: #8819EC;
+  --raspberry: #EA33ED;
+  --peach: #F2978A;
+  --lemon: #F5F451;
+  --pear: #BFF347;
+  --lychee: #EEEEF5;
+  --blackberry: #191923;
+  --white: #FFFFFF; 
+  --black: #101015;
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+@theme inline {
+  --color-grape: var(--grape);
+  --color-raspberry: var(--raspberry);
+  --color-peach: var(--peach);
+  --color-lemon: var(--lemon);
+  --color-pear: var(--pear);
+  --color-lychee: var(--lychee);
+  --color-blackberry: var(--blackberry);
+  --color-white: var(--white);
+  --color-black: var(--black);
+
+  --font-sans: var(--font-sans);
+}
+
+@layer base {
+  body {
+    @apply bg-blackberry text-lychee;
+  }
+
+  .btn {
+    @apply rounded text-white bg-lychee/10 hover:bg-lychee hover:text-blackberry transition flex items-center justify-center w-10 h-10;
+  }
+}
+
