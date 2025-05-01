@@ -8,7 +8,7 @@ export default function Page() {
   useEffect(() => {
     gsap.registerPlugin(SplitText);
 
-    let split = SplitText.create(".text", {
+    const split = SplitText.create(".text", {
       type: "chars, words",
       autoSplit: true,
     })
