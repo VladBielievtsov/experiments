@@ -3,7 +3,7 @@
 import Matter from 'matter-js'
 import { useEffect, useRef } from 'react'
 
-export default function () {
+export default function Page() {
   const sceneRef = useRef(null)
   const engineRef = useRef(Matter.Engine.create())
 

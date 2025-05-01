@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import { SplitText } from "gsap/SplitText";
 import { useEffect } from 'react';
 
-export default function () {
+export default function Page() {
   useEffect(() => {
     gsap.registerPlugin(SplitText);
 
